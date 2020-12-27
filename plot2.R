@@ -9,7 +9,7 @@ plot2 <- function(datafile=
     ## libraries
     library(dplyr)
     library(lubridate)
-    library(lattice)
+
 
     
     alldata <- read.table(file = datafile,
@@ -19,7 +19,7 @@ plot2 <- function(datafile=
     ## to convert dates, we have 16/12/2006
     ## default format is "%Y-%m-%d %H:%M:%S" 
     
-    print(names(alldata))
+    ##print(names(alldata))
     
     
     mydata <- alldata %>% ## convert the dates
